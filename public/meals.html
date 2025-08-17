@@ -1,54 +1,46 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
-<html>
+<!--
+	Meals Page - Travlr Getaways
+	Module One - CS 465 Full Stack Guide
+	Improved for semantic HTML, accessibility, and best practices
+-->
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Foods - Travlr Getaways Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>Meals - Travlr Getaways Website Template</title>
+	 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 	<div id="background">
 		<div id="page">
 			<div id="header">
-				<div id="logo">
-					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="100" width="200"></a>
-				</div>
-				<div id="navigation">
-					<ul>
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="travel.html">Travel</a>
-						</li>
-						<li>
-							<a href="rooms.html">Rooms</a>
-						</li>
-						<li class="selected">
-							<a href="meals.html">Meals</a>
-						</li>
-						<li>
-							<a href="news.html">News</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
+					<div id="logo">
+						<a href="index.html">
+						  <img src="images/logo.png" alt="Travlr Getaways Logo" height="100" width="200">
+						</a>
+					</div>
+					<nav id="navigation" aria-label="Main Navigation">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="travel.html">Travel</a></li>
+							<li><a href="rooms.html">Rooms</a></li>
+							<li class="selected"><a href="meals.html">Meals</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
 			</div>
 			<div id="contents">
-				<div class="box">
-					<div>
-						<div class="body">
-							<h1>Meals</h1>
+					<main class="box" aria-labelledby="meals-title">
+						<section class="body">
+							<h1 id="meals-title">Meals</h1>
 							<ul id="foods">
 								<li>
-									<h2><a href="meals.html">SeaFood Special</a></h2>
+									<h2><a href="meals.html">Seafood Special</a></h2>
 									<div class="infos">
-										<a href="meals.html"><img src="images/seafoods.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
+										<a href="meals.html"><img src="images/seafoods.jpg" alt="Fried Salmon Special" height="169" width="780"><span class="cover"></span></a>
 										<p>
 											<span>Fried Salmon Special</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
 										</p>
@@ -57,7 +49,7 @@
 								<li>
 									<h2><a href="meals.html">Sumptuous Desserts</a></h2>
 									<div class="infos">
-										<a href="meals.html"><img src="images/desserts.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
+										<a href="meals.html"><img src="images/desserts.jpg" alt="Choco Ice Cream Sandwich" height="169" width="780"><span class="cover"></span></a>
 										<p>
 											<span>Choco Ice Cream Sandwich</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
 										</p>
@@ -66,51 +58,37 @@
 								<li>
 									<h2><a href="meals.html">Buffet</a></h2>
 									<div class="infos">
-										<a href="meals.html"><img src="images/buffet.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
+										<a href="meals.html"><img src="images/buffet.jpg" alt="Mixed Buffet" height="169" width="780"><span class="cover"></span></a>
 										<p>
 											<span>Mixed Buffet</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
 										</p>
 									</div>
 								</li>
 							</ul>
-						</div>
-					</div>
-				</div>
+						</section>
+					</main>
 			</div>
 		</div>
-		<div id="footer">
-			<div>
-				<ul class="navigation">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="travel.html">Travel</a>
-					</li>
-					<li>
-						<a href="rooms.html">Rooms</a>
-					</li>
-					<li class="active">
-						<a href="meals.html">Meals</a>
-					</li>
-					<li>
-						<a href="news.html">News</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
+			<footer id="footer">
+				<nav aria-label="Footer Navigation">
+					<ul class="navigation">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="travel.html">Travel</a></li>
+						<li><a href="rooms.html">Rooms</a></li>
+						<li class="active"><a href="meals.html">Meals</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 				<div id="connect">
-					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest" aria-label="Pinterest"></a>
+					<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook" aria-label="Facebook"></a>
+					<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter" aria-label="Twitter"></a>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus" aria-label="Google Plus"></a>
 				</div>
-			</div>
-			<p>
-				© 2023 by Travlr Getaways. All Rights Reserved
-			</p>
-		</div>
+				<p>© 2023 by Travlr Getaways. All Rights Reserved</p>
+			</footer>
 	</div>
 </body>
 </html>
