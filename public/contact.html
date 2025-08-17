@@ -1,119 +1,89 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
-<html>
+<!--
+	Contact Page - Travlr Getaways
+	Module One - CS 465 Full Stack Guide
+	Improved for semantic HTML, accessibility, and best practices
+-->
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Contact - Travlr Getaways Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>Contact - Travlr Getaways Website Template</title>
+	 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 	<div id="background">
 		<div id="page">
 			<div id="header">
-				<div id="logo">
-					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="100" width="200"></a>
-				</div>
-				<div id="navigation">
-					<ul>
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="travel.html">Travel</a>
-						</li>
-						<li>
-							<a href="rooms.html">Rooms</a>
-						</li>
-						<li>
-							<a href="meals.html">Meals</a>
-						</li>
-						<li>
-							<a href="news.html">News</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li class="selected">
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
+					<div id="logo">
+						<a href="index.html">
+						  <img src="images/logo.png" alt="Travlr Getaways Logo" height="100" width="200">
+						</a>
+					</div>
+					<nav id="navigation" aria-label="Main Navigation">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="travel.html">Travel</a></li>
+							<li><a href="rooms.html">Rooms</a></li>
+							<li><a href="meals.html">Meals</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="about.html">About</a></li>
+							<li class="selected"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
 			</div>
 			<div id="contents">
-				<div class="box">
-					<div>
-						<div id="contact" class="body">
-							<h1>Contact</h1>
-							<form action="index.html" method="post">
-								<table>
-									<tbody>
-										<tr>
-											<td>Name:</td>
-											<td><input type="text" value="" class="txtfield"></td>
-										</tr> <tr>
-											<td>Email:</td>
-											<td><input type="text" value="" class="txtfield"></td>
-										</tr> <tr>
-											<td>Subject:</td>
-											<td><input type="text" value="" class="txtfield"></td>
-										</tr> <tr>
-											<td class="txtarea">Message:</td>
-											<td><textarea></textarea></td>
-										</tr> <tr>
-											<td></td>
-											<td><input type="submit" value="" class="btn"></td>
-										</tr>
-									</tbody>
-								</table>
+					<main class="box" aria-labelledby="contact-title">
+						<section id="contact" class="body">
+							<h1 id="contact-title">Contact Travlr Getaways</h1>
+							<form action="index.html" method="post" aria-label="Contact Form">
+								<fieldset>
+									<legend>Send us a message</legend>
+									<label for="name">Name:</label>
+									<input type="text" id="name" name="name" class="txtfield" required>
+
+									<label for="email">Email:</label>
+									<input type="email" id="email" name="email" class="txtfield" required>
+
+									<label for="subject">Subject:</label>
+									<input type="text" id="subject" name="subject" class="txtfield" required>
+
+									<label for="message">Message:</label>
+									<textarea id="message" name="message" rows="4" required></textarea>
+
+									<button type="submit" class="btn">Send</button>
+								</fieldset>
 							</form>
 							<h2>Travlr Getaways</h2>
-							<p>
-								<span>Address:</span> 123 Lorem Ipsum Cove, Sed Ut City, LI 12345
-							</p>
-							<p>
-								<span>Telephone Number:</span> 1-800-999-9999
-							</p>
-							<p>
-								<span>Fax Number:</span> 1-800-111-1111
-							</p>
-						</div>
-					</div>
-				</div>
+							<address>
+								<strong>Address:</strong> 123 Lorem Ipsum Cove, Sed Ut City, LI 12345<br>
+								<strong>Telephone Number:</strong> <a href="tel:18009999999">1-800-999-9999</a><br>
+								<strong>Fax Number:</strong> 1-800-111-1111
+							</address>
+						</section>
+					</main>
 			</div>
 		</div>
-		<div id="footer">
-			<div>
-				<ul class="navigation">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="travel.html">Travel</a>
-					</li>
-					<li>
-						<a href="rooms.html">Rooms</a>
-					</li>
-					<li>
-						<a href="meals.html">Meals</a>
-					</li>
-					<li>
-						<a href="news.html">News</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li class="active">
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
+			<footer id="footer">
+				<nav aria-label="Footer Navigation">
+					<ul class="navigation">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="travel.html">Travel</a></li>
+						<li><a href="rooms.html">Rooms</a></li>
+						<li><a href="meals.html">Meals</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="active"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 				<div id="connect">
-					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest" aria-label="Pinterest"></a>
+					<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook" aria-label="Facebook"></a>
+					<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter" aria-label="Twitter"></a>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus" aria-label="Google Plus"></a>
 				</div>
-			</div>
-			<p>
-				© 2023 by Travlr Getaways. All Rights Reserved
-			</p>
-		</div>
+				<p>© 2023 by Travlr Getaways. All Rights Reserved</p>
+			</footer>
 	</div>
 </body>
 </html>
