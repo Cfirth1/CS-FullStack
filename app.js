@@ -4,6 +4,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -29,7 +30,7 @@ app.use(session({
   resave: false,
   saveUninitialized: false,
   cookie: { secure: false } // Set to true if using HTTPS
-});
+}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
