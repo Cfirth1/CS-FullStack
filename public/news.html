@@ -1,91 +1,63 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
-<html>
+<!--
+	News Page - Travlr Getaways
+	Module One - CS 465 Full Stack Guide
+	Improved for semantic HTML, accessibility, and best practices
+-->
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>News - Travlr Getaways Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	 <meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>News - Travlr Getaways Website Template</title>
+	 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 	<div id="background">
 		<div id="page">
 			<div id="header">
-				<div id="logo">
-					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="100" width="200"></a>
-				</div>
-				<div id="navigation">
-					<ul>
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="travel.html">Travel</a>
-						</li>
-						<li>
-							<a href="rooms.html">Rooms</a>
-						</li>
-						<li>
-							<a href="meals.html">Meals</a>
-						</li>
-						<li class="selected">
-							<a href="news.html">News</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
+					<div id="logo">
+						<a href="index.html">
+						  <img src="images/logo.png" alt="Travlr Getaways Logo" height="100" width="200">
+						</a>
+					</div>
+					<nav id="navigation" aria-label="Main Navigation">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="travel.html">Travel</a></li>
+							<li><a href="rooms.html">Rooms</a></li>
+							<li><a href="meals.html">Meals</a></li>
+							<li class="selected"><a href="news.html">News</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
 			</div>
 			<div id="contents">
-				<div class="box">
-					<div>
-						<div id="news" class="body">
-							<div class="sidebar">
-								<h3>Latest News</h3>
+					<main class="box" aria-labelledby="news-title">
+						<section id="news" class="body">
+							<aside class="sidebar" aria-label="Latest News and Tips">
+								<h2>Latest News</h2>
 								<ul>
-									<li>
-										<a href="news.html">2023 Best Beaches Contest Winners</a>
-									</li>
-									<li>
-										<a href="news.html">Top 10 Diving Spots</a>
-									</li>
-									<li>
-										<a href="news.html">Fishing ban to be implemented this year</a>
-									</li>
-									<li>
-										<a href="news.html">Lifeguard saves child from drowning</a>
-									</li>
+									<li><a href="news.html">2023 Best Beaches Contest Winners</a></li>
+									<li><a href="news.html">Top 10 Diving Spots</a></li>
+									<li><a href="news.html">Fishing ban to be implemented this year</a></li>
+									<li><a href="news.html">Lifeguard saves child from drowning</a></li>
 								</ul>
-								<h3>Vaction Tips</h3>
+								<h2>Vacation Tips</h2>
 								<ul>
-									<li>
-										<a href="news.html">What to bring on the beach?</a>
-									</li>
-									<li>
-										<a href="news.html">Planning Fun Activities</a>
-									</li>
-									<li>
-										<a href="news.html">Diving Checklist</a>
-									</li>
-									<li>
-										<a href="news.html">First Aid</a>
-									</li>
-									<li>
-										<a href="news.html">How to Build a Sand Castle?</a>
-									</li>
-									<li>
-										<a href="news.html">Tanning Tips</a>
-									</li>
+									<li><a href="news.html">What to bring on the beach?</a></li>
+									<li><a href="news.html">Planning Fun Activities</a></li>
+									<li><a href="news.html">Diving Checklist</a></li>
+									<li><a href="news.html">First Aid</a></li>
+									<li><a href="news.html">How to Build a Sand Castle?</a></li>
+									<li><a href="news.html">Tanning Tips</a></li>
 								</ul>
-							</div>
-							<div>
-								<h1>News</h1>
-								<img src="images/kayak.jpg" alt="Img">
+							</aside>
+							<article aria-labelledby="news-title">
+								<h1 id="news-title">News</h1>
+								<img src="images/kayak.jpg" alt="Kayaking Experience">
 								<h2>Experience Kayaking!</h2>
-								<span class="time">April 03, 2023<br> by: Juan De La Cruz</span>
+								<p class="time"><time datetime="2023-04-03">April 03, 2023</time><br> by: Juan De La Cruz</p>
 								<p>
 									Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem, ullamcorper vitae laoreet id, rutrum et tortor. Vivamus luctus, lacus id egestas facilisis, nunc nunc ultricies lorem, vitae pulvinar nibh urna vel velit.
 								</p>
@@ -95,45 +67,31 @@
 								<p>
 									Phasellus viverra fringilla lacus, malesuada blandit velit iaculis dignissim. Suspendisse rutrum massa mauris. Donec quis tempus elit.Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat.
 								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+							</article>
+						</section>
+					</main>
 			</div>
 		</div>
-		<div id="footer">
-			<div>
-				<ul class="navigation">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="travel.html">Travel</a>
-					</li>
-					<li>
-						<a href="rooms.html">Rooms</a>
-					</li>
-					<li>
-						<a href="meals.html">Meals</a>
-					</li>
-					<li class="active">
-						<a href="news.html">News</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
+			<footer id="footer">
+				<nav aria-label="Footer Navigation">
+					<ul class="navigation">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="travel.html">Travel</a></li>
+						<li><a href="rooms.html">Rooms</a></li>
+						<li><a href="meals.html">Meals</a></li>
+						<li class="active"><a href="news.html">News</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 				<div id="connect">
-					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest" aria-label="Pinterest"></a>
+					<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook" aria-label="Facebook"></a>
+					<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter" aria-label="Twitter"></a>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus" aria-label="Google Plus"></a>
 				</div>
-			</div>
-			<p>
-				© 2023 by Travlr Getaways. All Rights Reserved
-			</p>
-		</div>
+				<p>© 2023 by Travlr Getaways. All Rights Reserved</p>
+			</footer>
 	</div>
 </body>
 </html>
