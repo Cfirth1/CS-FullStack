@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{> navigation}}
-    <main>
-      {{{body}}}
-    </main>
-    {{> footer}}
-  </body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/travel">Travel</a></li>
+        <li><a href="/rooms">Rooms</a></li>
+        <li><a href="/meals">Meals</a></li>
+        <li><a href="/news">News</a></li>
+        {{#if user}}
+          <li>Welcome, {{user.username}}</li>
+          <li><form id="logout-form" action="/auth/logout" method="post" style="display:inline;"><button type="submit">Logout</button></form></li>
+        {{else}}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Login</a></li>
+        {{/if}}
+      </ul>
+  </nav>
+  <script src="/javascripts/logout.js"></script>
 </html>

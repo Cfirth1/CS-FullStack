@@ -1,5 +1,12 @@
+
 var express = require('express');
 var router = express.Router();
+
+// Middleware to add user info to all views
+router.use((req, res, next) => {
+  res.locals.user = req.session.user || null;
+  next();
+});
 
 // GET home page
 router.get('/', function(req, res, next) {
